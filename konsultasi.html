@@ -22,6 +22,30 @@
         ::-webkit-scrollbar {
             display: none; 
         }
+
+       /* body {
+            background-image: url('/asset/background.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-position: center top;
+            background-size: 85%;
+            opacity: 0.5; 
+        } */
+
+        .container {
+            position: relative;
+        }
+
+        .teks-overlay {
+            position: absolute;
+            top: 50%; /* Menempatkan teks di tengah vertikal */
+            left: 50%; /* Menempatkan teks di tengah horizontal */
+            transform: translate(-50%, -50%); /* Pusatkan elemen teks */
+            text-align: center; /* Pusatkan teks secara horizontal */
+            color: white; /* Warna teks */
+        }
+
     </style>
 
   </head>
@@ -54,22 +78,21 @@
         </div>
       </nav>
       <!-- End navbar -->
-
-      <!-- Dashboard Content -->
       <div class="container">
-        <div class="row">
+        <img src="/asset/background.jpeg" alt="" style="margin-left: 100px; width: 80%; opacity: 0.3;">
+        <div class="teks-overlay">
+            <div style="color: black;">
+                <h3>Halo!</h3>
+                <h5>Apakah terdapat kendala?</h5>
+                <h5>Kamu membuka laman yang tepat untuk konsultasi, nih</h5>
+            </div>
             
-          <div class="col">
-            <img src="/asset/logo.jpeg" alt="logo" style="height: 490px; width: 490px;">
-          </div>
-          <div class="col" style="padding-top: 180px; text-align: center;">
-            <h2><b>WELCOME TO DATA SECURITY</b></h2>
-            <h6 style="text-align: center; padding-top: 10px;">Amankan Data Anda dengan Perlindungan Tepat! 
-                Kami hadir dengan solusi yang tak tertandingi untuk melindungi informasi berharga Anda. Temukan ketenangan dan kepercayaan dengan kami hari ini.
-            </h6>
-          </div>
         </div>
-      </div>
+        
+    </div>
+    <br><br>
+    <button type="button" style="margin-left: 600px; margin-top: -40px;" class="btn btn-primary btn-sm">Konsultasi</button>
+    
 
 
 
