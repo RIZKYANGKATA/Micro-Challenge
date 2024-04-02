@@ -58,12 +58,17 @@
         var password = document.getElementById('inputPassword').value.trim();
 
         if (email === '' || password === '') {
-            alert('Mohon lengkapi form sebelum login.');
+            alert('Mohon masukkan email dan password sebelum login.');
             return;
         }
 
         document.getElementById('inputEmail').value = '';
         document.getElementById('inputPassword').value = '';
+
+        if (password.length < 8) {
+        alert('Password anda salah.');
+        return;
+      }
 
         
         window.location.href = 'konsultasi_next_page.html';
