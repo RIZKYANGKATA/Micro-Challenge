@@ -43,18 +43,21 @@
   <script>
     
     function redirectToNextPage() {
+      var namaDepan = document.getElementById('namaDepan').value;
+      var namaBelakang = document.getElementById('namaBelakang').value;
+      var email = document.getElementById('email').value;
       var password = document.getElementById('inputPassword').value;
       var confirmPassword = document.getElementById('inputConfirmPassword').value;
 
-      
-      if (password.length < 8) {
+      if (namaDepan === "" || namaBelakang === "" || email === "" || password === "" || confirmPassword === "") {
+        alert('Lengkapi form terlebih dahulu.');
+      } else if (password.length < 8) {
         alert('Masukkan password minimal 8 karakter.');
       } else if (confirmPassword.length < 8) {
         alert('Masukkan konfirmasi password minimal 8 karakter.');
       } else if (password !== confirmPassword) {
         alert('Password tidak cocok.');
       } else {
-        
         window.location.href = 'konsultasi_next_page.html';
       }
     }
