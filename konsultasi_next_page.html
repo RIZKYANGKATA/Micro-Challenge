@@ -30,19 +30,55 @@
 <nav class="navbar navbar-expand-lg" style="background-color: #011C2A;">
     <img src="/asset/logo.jpeg" alt="logo" height="40px" width="50px" class="rounded-circle me-3" style="margin-left: 25px;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse mr-30px justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#myModal">
-                    <i class="bi bi-box-arrow-right" style="color: #fff; font-size: 20px; padding-top: 0px;"></i>
-                </button>
-            </li>
-        </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" style="color: #fff;" href="index_SL.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #fff;" href="artikel.html">Artikel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: #fff;" href="konsultasi_next_page.html">Konsultasi</a>
+        </li>
+        <li>
+            <i class="bi bi-person-circle" style="font-size: 1.5rem; color: #fff;" data-bs-toggle="modal" data-bs-target="#logoutModal"></i>
+        </li>
+      </ul>
     </div>
-</nav>
-<!-- End Navbar -->
+  </nav>
+  <!-- End navbar -->
+
+  <!-- Logout Modal -->
+<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="logoutModalLabel">Konfirmasi Logout</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Apakah Anda yakin ingin logout?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+                <button type="button" class="btn btn-primary" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Logout Modal -->
+
+<!-- Script -->
+<script>
+    function logout() {
+        window.location.href = 'index.html';
+        
+    }
+</script>
+
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
