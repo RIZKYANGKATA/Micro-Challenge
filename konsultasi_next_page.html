@@ -38,9 +38,6 @@
           <a class="nav-link" style="color: #fff;" href="index_SL.html">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style="color: #fff;" href="artikel.html">Artikel</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" style="color: #fff;" href="konsultasi_next_page.html">Konsultasi</a>
         </li>
         <li>
@@ -56,7 +53,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="logoutModalLabel">Konfirmasi Logout</h5>
+                <h5 class="modal-title" id="logoutModalLabel"><img src="/asset/logo.jpeg" alt="" style="height: 100px; width: 100px;"></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -113,10 +110,6 @@
                     <label for="inputGambar" style="color: black" class="form-label"><b>Unggah Gambar (Optional)</b></label>
                     <input type="file" class="form-control" style="border: black solid 1px; width: 900px;" id="inputGambar" accept="image/*">
                 </div>
-                <div class="mb-3">
-                    <label for="inputEmail" style="color: black" class="form-label"><b>Email</b></label>
-                    <input type="email" class="form-control" style="border: black solid 1px; width: 900px; height: 50px;" id="inputEmail" placeholder="masukkan email anda">
-                </div>
             </div>
         </div>
     </div>
@@ -148,18 +141,14 @@
     function validateAndClearForm() {
         var kendala = document.getElementById('inputKendala').value.trim();
         var gambar = document.getElementById('inputGambar').files[0];
-        var email = document.getElementById('inputEmail').value.trim();
 
-        if (kendala === '' || email === '') {
+        if (kendala === '') {
             alert('Mohon lengkapi form sebelum mengirimkan pesan.');
             return;
         }
 
-        // Lakukan penanganan khusus untuk file gambar jika diperlukan
-
         document.getElementById('inputKendala').value = '';
         document.getElementById('inputGambar').value = '';
-        document.getElementById('inputEmail').value = '';
 
         // Menampilkan Modal
         var myModal = new bootstrap.Modal(document.getElementById('successModal'));

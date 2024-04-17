@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Safety</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .rounded-circle {
+          border-radius: 50%;
+        }
+
+        .navbar-collapse {
+          margin-right: 40px;
+        }
+
+        .nav-item{
+            padding-right: 30px;
+        }
+
+        ::-webkit-scrollbar {
+            display: none; 
+        }
+        .rounded-circle-card {
+            border-radius: 50%;
+            object-fit: cover;
+            width: 100px; 
+            height: 100px; 
+        }
+
+        .navbar-collapse {
+          margin-right: 40px;
+        }
+
+        /* Style tambahan */
+        .col-card {
+          margin-bottom: 30px; /* Mengatur jarak antar card */
+        }
+
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #011C2A;">
+        <img src="/asset/logo.jpeg" alt="logo" height="40px" width="50px" class="rounded-circle me-3" style="margin-left: 25px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      <!-- End navbar -->
+
+      <div class="container">
+       <div class="content" style="text-align: center; padding-top: 20px;">
+        <h2>Rekomendasi Konsultan</h2>
+        <h6>Konsultasi online 24 jam</h6>
+       </div>
+       <br><br>
+
+       <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col">
+            <h3><b>Chat dengan konsultan</b></h3>
+            <h5>Layanan kosultasi yang siap siaga untuk membantu menjaga data kamu</h5>
+            <img src="/asset/konsul.jpeg" alt="" height="400px" width="400px">
+             <h5>Pilih konsultan berpengalaman dan chat</h5>
+             <h5>online sekarang</h5>
+          </div>
+
+                  <div class="col">
+                      <div class="container text-center">
+                        <div class="row align-items-center">
+
+                                  <!-- Konsultan 1 -->
+                                  <div class="col col-card">
+                                    <div class="card" style="width: 12rem; margin-left: 40px; background-color: #B4B4B8;">
+                                        <div class="card-body d-flex justify-content-center align-items-center">
+                                            <img src="/asset/anak/p1.jpeg" class="rounded-circle-card" alt="...">
+                                        </div>
+                                        <div class="card-body" style="height: 110px;">
+                                            <p class="card-text"><h6>Parto</h6></p>
+                                            <a href="#" onclick="showModal('infoModal1')" style="text-decoration: none; color: #585555;">Konsultan</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal 1 -->
+                                <div class="modal fade" id="infoModal1" tabindex="-1" aria-labelledby="infoModalLabel1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="infoModalLabel1">Informasi Konsultan</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" style="align-items: center;">
+                                                <img src="/asset/anak/p1.jpeg" style="width: 200px;" alt="">
+                                                <h3><b>Parto</b></h3>
+                                                <p>Pengalaman: 10 tahun di bidang enkripsi data.</p>
+                                                <p>Rating: 6</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                                <a href="first_page.html" class="btn btn-primary">Konsultasi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                              <!-- Konsultan 2 -->
+                              <div class="col col-card">
+                                  <div class="card" style="width: 12rem; margin-left: 40px; background-color: #B4B4B8;">
+                                      <div class="card-body d-flex justify-content-center align-items-center">
+                                          <img src="/asset/anak/p2.jpeg" class="rounded-circle-card" alt="...">
+                                      </div>
+                                      <div class="card-body" style="height: 110px;">
+                                          <p class="card-text"><h6>Mira</h6></p>
+                                          <a href="#" onclick="showModal('infoModal2')" style="text-decoration: none; color: #585555;">Konsultan</a>
+                                      </div>
+                                  </div>
+                              </div>
+
+                                <!-- Modal 2 -->
+                                <div class="modal fade" id="infoModal2" tabindex="-1" aria-labelledby="infoModalLabel2" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="infoModalLabel2">Informasi Konsultan</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" style="align-items: center;">
+                                                <img src="/asset/anak/p2.jpeg" style="width: 200px;" alt="">
+                                                <h3><b>Mira</b></h3>
+                                                <p>Pengalaman: 10 tahun di bidang enkripsi data.</p>
+                                                <p>Rating: 6</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                                <a href="first_page.html" class="btn btn-primary">Konsultasi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Konsultan 3 -->
+                              <div class="col col-card">
+                                <div class="card" style="width: 12rem; margin-left: 40px; background-color: #B4B4B8;">
+                                    <div class="card-body d-flex justify-content-center align-items-center">
+                                        <img src="/asset/anak/p3.jpeg" class="rounded-circle-card" alt="...">
+                                    </div>
+                                    <div class="card-body" style="height: 110px;">
+                                        <p class="card-text"><h6>Heru</h6></p>
+                                        <a href="#" onclick="showModal('infoModal3')" style="text-decoration: none; color: #585555;">Konsultan</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Modal 3 -->
+                            <div class="modal fade" id="infoModal3" tabindex="-1" aria-labelledby="infoModalLabel3" aria-hidden="true">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h5 class="modal-title" id="infoModalLabel2">Informasi Konsultan</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body" style="align-items: center;">
+                                          <img src="/asset/anak/p3.jpeg" style="width: 200px;" alt="">
+                                          <h3><b>Heru</b></h3>
+                                          <p>Pengalaman: 10 tahun di bidang enkripsi data.</p>
+                                          <p>Rating: 6</p>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                          <a href="first_page.html" class="btn btn-primary">Konsultasi</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+                             <!-- Konsultan 4 -->
+                             <div class="col col-card">
+                              <div class="card" style="width: 12rem; margin-left: 40px; background-color: #B4B4B8;">
+                                  <div class="card-body d-flex justify-content-center align-items-center">
+                                      <img src="/asset/anak/p4.jpeg" class="rounded-circle-card" alt="..." style="width: 100px; padding-right: 10px; padding-top: 5px;">
+                                  </div>
+                                  <div class="card-body" style="height: 110px;">
+                                      <p class="card-text"><h6>Joko</h6></p>
+                                      <a href="#" onclick="showModal('infoModal4')" style="text-decoration: none; color: #585555;">Konsultan</a>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <!-- Modal 4 -->
+                          <div class="modal fade" id="infoModal4" tabindex="-1" aria-labelledby="infoModalLabel4" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="infoModalLabel2">Informasi Konsultan</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" style="align-items: center;">
+                                        <img src="/asset/anak/p4.jpeg" style="width: 200px;" alt="">
+                                        <h3><b>Joko</b></h3>
+                                        <p>Pengalaman: 10 tahun di bidang enkripsi data.</p>
+                                        <p>Rating: 6</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                        <a href="first_page.html" class="btn btn-primary">Konsultasi</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  <script>
+                      function showModal(modalId) {
+                          var myModal = new bootstrap.Modal(document.getElementById(modalId));
+                          myModal.show();
+                      }
+                  </script>
+
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                
+                
+                
+              </div>
+              <br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      </div>
+</body>
+</html>
